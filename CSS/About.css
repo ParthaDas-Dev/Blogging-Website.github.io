@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+body{width: 100%;
+    height:100vh;
+    background-image: linear-gradient(-90deg,rgba(255, 255, 255, 0.96) 60%, transparent 40% ),url(https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=929&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden ;
+}
+#mobile-demo {
+    background-image: linear-gradient(45deg, #004d40, #006064, #009688, #4db6ac);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+ .brand-logo{
+     font-size: 20px !important;
+ } 
+.Watermark1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-20%, -50%);
+    font-weight: bolder;
+    font-size: 70px;
+    color:rgba(235, 223, 223, 0.3) ;
+
+}
+
+.about-SEC{
+    position: relative;
+    top: 6rem;
+    left:-5rem !important;
+    height:400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.A-Heading{
+    background-color: rgba(211, 206, 206, 0.09);
+    padding: 5px;
+    font-weight: 700;
+    
+}
+.links{
+    margin-top: 4rem;
+}
+.about-main{
+    margin:10px;
+   
+}
+.about-main span {
+        padding:3px;
+        margin: 5px 3px;
+        font-weight: 800;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px){
+    body{width: 100%;
+        height:800px !important;
+        overflow-x:hidden ;
+    } 
+    .Watermark1{
+        position: absolute;
+        top: 18%;
+        left: 40%;
+  
+    
+    }
+    .about-SEC{
+        position: relative;
+        padding: 1rem;
+        top: 5rem;
+        left:-2rem !important;
+        height:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    body{width: 100%;
+        height:auto;
+        overflow-x:hidden ;
+    }
+    .Watermark1{
+       
+        top: 20%;
+        left: 20%;
+      
+    
+    }
+    .about-SEC{
+        position: relative;
+        padding: 1rem;
+        top: 6rem;
+        left:0rem !important;
+        height:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+
+}

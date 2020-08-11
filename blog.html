@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/blog.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Main Blog</title>
+
+  </head>
+
+  <body>
+<header>
+    <nav class="teal">
+        <div class="nav-wrapper container ">
+          <a href="blog.html" class="brand-logo center-align">BLOG-HERE</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li class="grey darken-3"><a href="blog.html">BLOG</a></li>
+            <li><a href="SignUp.html">LOG IN & SIGN UP</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+           <!--Moblie Navigation-->
+      <ul class="sidenav teal" id="mobile-demo">
+        <li ><a class="white-text" href="index.html">HOME</a></li>
+        <li><a class="white-text" href="SignUp.html">LOG IN & SIGN UP</a></li>
+        <li><a class="white-text "href="blog.html">BLOG</a></li>
+        <li><a class="white-text" href="About.html">ABOUT</a></li>
+        <li><a  class="white-text" href="Contact.html">CONTACT </a></li>
+      </ul>
+             
+         <section>
+           <div class="container-fluid ">
+            <div class="slider">
+              <ul class="slides">
+                <li>
+                  <img src="Blog-images/slide1.jpg"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>Welcome To Our All In One Blog!</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Find Your Favourite Topics & Posts</h5>
+                    <a href="#SEC3" class="waves-effect waves-light btn"> EXPLORE NOW</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="Blog-images/slide2.jpg"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h3>Haven't Signed Up Yet?</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Sign Up Or Log In To Get Personalized Post & Many More </h5>
+                    <a href="SignUp.html" class="waves-effect waves-light btn"> SIGN UP NOW</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="Blog-images/slide3.jpg"> <!-- random image -->
+                  <div class="caption right-align">
+                    <h3>Write A Post As A Guest Blogger</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">You Can Write A Post For Our Blog</h5>
+                    <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> WRITE A POST NOW</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="Blog-images/slide4.jpg"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h3>Wide Variety Of Topics & Categories</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Categories - Tech,Gaming,Travel,Funny etc..</h5>
+                    <a href="#SEC3" class="waves-effect waves-light btn"> Browse Now</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+           </div>
+
+         </section>
+
+       <div class="container-fluid ">
+         <div class="row  center topics " id="topics">
+           <div class="col s12 m4 l2 teal">
+            <h6><a onclick="M.toast({html: 'Random/ALL Posts'})" href="#SEC3" class=" white-text" id="ALL"> Random (ALL)</a></h6>
+           </div>
+           <div class="col s12 m4 l2 orange life">
+            <h6><a onclick="M.toast({html: ' LifeStyle Posts Only'})"  href="#SEC3" class=" white-text " id="Life"> Lifestyle</a></h6>
+           </div>
+           <div class="col s12 m4 l2 purple darken-3">
+            <h6><a onclick="M.toast({html: ' Funny Posts Only'})"  href="#SEC3" class=" white-text" id="Fun"> Funny</a></h6>
+           </div>
+           <div class="col s12 m4 l2 green accent-4">
+            <h6><a  onclick="M.toast({html: 'Travel Posts Only '})"  href="#SEC3" class=" white-text" id="Travel"> Travelling</a></h6>
+           </div>
+           <div class="col s12 m4 l2  cyan darken-4">
+            <h6><a  onclick="M.toast({html: 'Technology Posts Only '})"  href="#SEC3" class=" white-text" id="Tech"> Technology</a></h6>
+           </div>
+           <div class="col s12 m4 l2 brown darken-2">
+            <h6><a onclick="M.toast({html: 'News Only  '})"  href="#SEC3" class=" white-text" id="News"> News</a></h6>
+           </div>
+         </div>
+       </div>
+
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s12 m5">
+            
+                <div class="card">
+                  <div class="card-image">
+                    <img  class="responsive-img postimg2"  src="https://images.unsplash.com/photo-1523365280197-f1783db9fe62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="400px" height="300px" alt="Youtube">
+                    <span class="card-title ct-1"><a href="#" class="white-text" onclick="popup()">Top Ten Most Popular Tech Youtubers (2020)</a> <span class="badge teal white-text">Technology</span> </span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            
+            <div class="card">
+              <div class="card-image">
+                <img  class="responsive-img postimg2"  src="Blog-images/post2.jpg"  width="400px" height="300px" alt="Travel">
+                <span class="card-title ct-2"><a href="#" class="white-text" onclick="popup()">How To Enjoy Nature In The City In 2020</a> <span class="badge orange white-text">Lifestyle</span> </span>
+
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m3" >
+        <div class="row">
+          <div class="col s12">
+            
+            <div class="card">
+              <div class="card-image">
+                <img  class="responsive-img pimg3"  src="Blog-images/post3.jpg"  width="400px" height="300px" alt="Youtube">
+                <span class="card-title ct-3"><a href="#" class="white-text" onclick="popup()">Best Places To Visit In ICELAND (2020)</a> <span class="badge green accent-4 white-text">Travelling</span> </span>
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="row pimg3-row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img  class="responsive-img pimg4"  src="Blog-images/post4.jpg"  width="400px" height="300px" alt="Youtube">
+                <span class="card-title ct-4"><a href="#" class="white-text" onclick="popup()">PC Components' Price on The Rise As Pandemic Continues</a> <span class="badge teal white-text">Technology</span> </span>
+
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section>
+    <section  class="SEC3" id="SEC3">
+   <div class="container-fluid">
+     <h5 class="indigo darken-3 white-text Rpost-Head">Random Posts</h5>
+     <div class="underline z-depth-2"></div>
+   <div class="row Ran-tech" >
+     <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1595524288414-a7fda0a12d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=614&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge teal white-text">Technology</span>
+     </div>
+     <div class="col s12 m6">
+      <h5>Top Five Futuristic Technologies That Will Transform The World</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+     <div class="col s12 m3 "  id='social-media' >
+      <h6 class="teal social white-text ">SOCIAL MEDIA</h6>
+      <div class="underline1 hide-on-med-and-down z-depth-2"></div>
+      <div class="row"   data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="20"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+        <div class="col s12 m12 l6">
+          <h6 class="FB"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></h6>
+        </div>
+        <div class="col s12 m12 l6">
+          <h6 class="TW  blue accent-2"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></h6>
+        </div>
+      </div>
+      <div class="row"   data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="30"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+        <div class="col s12 m12 l6">
+          <h6 class="RSS  amber darken-4"><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS Feed</a></h6>
+        </div>
+        <div class="col s12 m12 l6">
+          <h6 class="INSTA pink darken-1"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></h6>
+        </div>
+      </div>
+      <div class="row"   data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+        <div class="col s12 m12 l6">
+          <h6 class="WA green accent-4"><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a></h6>
+        </div>
+        <div class="col s12 m12 l6">
+          <h6 class="YT red lighten-1"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a></h6>
+        </div>
+      </div>
+   </div>   
+   </div>
+    </section>
+   <section class="SEC4">
+     <div class="container-fluid">
+       <div  class="row Ran-News">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost5.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge brown darken-2 white-text">News</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Coronavirus India Live News Update: India's COVID-19 Cases Soar To 13,85,522</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+       <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost2.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Monkeys Steal Coronavirus Patient Blood Samples From Lab Tech In India</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+       <div  class="row Ran-Life">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost3.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Top Ten Richest Countries In The World In 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         <div class="col s12 m3 " id="Popular-sec"> 
+          <h6 class="grey darken-3 popular z-depth-2 white-text ">POPULAR POSTS</h6>
+          <div class="underline2 z-depth-2 hide-on-med-and-down"></div>
+             <!---Polpular Posts-->
+           <div class="row">
+             <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img  class="responsive-img pimg3"  src="Blog-images/post3.jpg"  width="400px" height="300px" alt="Youtube">
+                  <span class="card-title ct-3"><a href="#" class="white-text" onclick="popup()">Best Places To Visit In ICELAND (2020)</a> <span class="badge green accent-4 white-text">Travelling</span> </span>
+  
+            </div>
+          </div>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div  class="row Ran-Fun">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost4.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Human Urine Could Help Make Concrete On Moon: Space Agency</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         <div class="col s12 m3" id="popular-Sec2">
+             <!---Polpular Posts-->
+           <div class="row">
+             <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img  class="responsive-img pimg3"  src="Blog-images/p-post2.jpg"  width="400px" height="300px" alt="Youtube">
+                  <span class="card-title ct-3"><a href="#" class="white-text" onclick="popup()">Top 10 Places To Visit In SINGAPORE 2020 </a> <span class="badge green accent-4 white-text">Travelling</span> </span>
+  
+            </div>
+          </div>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div  class="row technology Ran-tech">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost6.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge teal white-text">Technology</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Vivo Y51s 5G With 6.53-inch FHD+ Display, Exynos 880, 48MP Triple Rear Cameras Announced</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         <div class="col s12 m3" id="popular-Sec3">
+             <!---Polpular Posts-->
+           <div class="row">
+             <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img  class="responsive-img pimg3 z-depth-2 "  src="Blog-images/p-post3.jpg"  width="400px" height="300px" alt="Youtube">
+                  <span class="card-title ct-3"><a href="#" class="white-text" onclick="popup()" >How To Stop Running Away From Difficulty Problem In Life</a> <span class="badge orange white-text">Lifestyle</span>
+  
+            </div>
+          </div>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost7.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>How To Heal If Nobody Comes To Heal Your Loneliness & Solitude</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         <div class="col s12 m3">
+             <!---Polpular Posts-->
+           <div class="row Ran-tech">
+             <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img  class="responsive-img pimg3 z-depth-2 "  src="Blog-images/p-post4.jpg"  width="400px" height="300px" alt="Youtube">
+                  <span class="card-title ct-3"><a href="#" class="white-text" onclick="popup()">MERCEDES Confirms EQS Electric Seden With 700+ Range</a>  <span class="badge teal white-text">Technology</span>
+  
+            </div>
+          </div>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div  class="row Ran-News">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost8.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge brown darken-2 white-text">News</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>10 Best CORONAVIRUS Apps To Keep You Informed AND Cure - Stay Safe </h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+       <div  class="row Ran-Travel">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost9.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge green accent-4 white-text" onclick="popup()">Travelling</span>
+         </div>
+         <div  class="col s12 m6">
+          <h5>The 18 Best Things To See And Do In OSLO</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         
+       </div>
+       <div  class="row Ran-News">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/rpost10.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge brown darken-2 white-text">News</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>NASA Says INDIA'S Pollution Lowest In 20 Years -It's No Surprise</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+        
+        
+      </div>
+       </div>
+     </div>
+    </section>
+    <section id="life-sec">   <!---Lifestyle Section-->
+      <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost3.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>15 Tips & Tricks To Have The PERFECT Study Session</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost4.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Top Ten Fashion Designing Colleges In World</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost5.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Top Ten Peaceful Country In The World</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost6.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>How To Live a Happy Life & Stay Healthy - 10 Tips</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>   
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost7.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>10 Gardening Tips Every Gardener Should Know As A Beginner</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>   
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost8.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>How To Live A Life Without Regrets In 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost9.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>How to Redefine Yourself by Letting Go of the Past</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+       <div class="row Ran-Life ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/lifestyle/lpost10.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge orange white-text">Lifestyle</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>7 Ways to Overcome Depression Without Medication</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+    
+       </div>
+    </section> <!---Ending Of Lifestyle Section-->
+
+    <section id="Fun-Sec"> <!---Funny Section-->
+      <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/funny/fpost3.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>India: Officials Claim Pakistan 'SPY' Pigeon Captured</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+
+       <div class="row Ran-Fun ">
+       <div class="col s12 m3">
+         <img  class="responsive-img pimg"  src="Blog-images/funny/fpost4.jpg"  width="400px" height="300px" alt="Youtube"> 
+         <span class="badge purple darken-3 white-text">Funny</span>
+        </div>
+        <div class="col s12 m6">
+         <h5>Why America Is Losing The Toilet Race & Japan Is Winning?</h5>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+         <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+        </div>
+      </div>
+
+      <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/funny/fpost5.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Japanese Baseball Fan Enters Empty Stadium Via Robot -  COVID-19 Effect Or Baseball Fever</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+      
+       <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/funny/fpost6.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text" onclick="popup()">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Russian Chefs In Naked Lockdown Protest After Virus Strips Them Of Income</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+
+       <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/funny/fpost7.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Wife Wants Divorce Because husband's Cat Bites Her Dog!</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+
+       <div class="row Ran-Fun ">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="Blog-images/funny/fpost8.jpg"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge purple darken-3 white-text">Funny</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>Man Sues Neighbour For Sneezing in Front Of His House!</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+       </div>
+       
+       
+
+
+       
+  
+          
+
+
+
+
+
+    </section>        <!---Ending Of Funny Section-->
+
+<section  id="travel-Sec">       <!---Travel Section-->
+  <div  class="row Ran-Travel">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1542385939-cac37e190818?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge green accent-4 white-text">Travelling</span>
+     </div>
+     <div  class="col s12 m6">
+      <h5>10 Things To See And Do In DETROIT</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn"> Read More</a>
+     </div>
+   </div>
+
+   <div  class="row Ran-Travel">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge green accent-4 white-text">Travelling</span>
+     </div>
+     <div  class="col s12 m6">
+      <h5>Top 10 Best Thngs To See And Do In MADRID</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+
+   <div  class="row Ran-Travel">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge green accent-4 white-text">Travelling</span>
+     </div>
+     <div  class="col s12 m6">
+      <h5>How to Get Around Japan on a Budget</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+
+   <div  class="row Ran-Travel">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1519832979-6fa011b87667?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=735&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge green accent-4 white-text">Travelling</span>
+     </div>
+     <div  class="col s12 m6">
+      <h5>The 10 Best Hostels in Montreal - Explore CANADA</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+
+   <div  class="row Ran-Travel">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge green accent-4 white-text">Travelling</span>
+     </div>
+     <div  class="col s12 m6">
+      <h5>How to Get Around New Zealand on a Budget </h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+
+
+
+
+</section>  <!---Ending Of Funny Section-->
+
+
+<section id="tech-Sec">  <!---Tech Section-->
+  <div  class="row technology Ran-tech">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge teal white-text">Technology</span>
+     </div>
+     <div class="col s12 m6">
+      <h5>Realme C15 With 6.5-inch Mini Drop Display, Helio G35, Quad Rear Cameras, 6000mAh Battery Announced</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+     </div>
+
+     <div  class="row technology Ran-tech">
+      <div class="col s12 m3">
+        <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=799&q=80"  width="400px" height="300px" alt="Youtube"> 
+        <span class="badge teal white-text">Technology</span>
+       </div>
+       <div class="col s12 m6">
+        <h5>Google Is Building A New Private Subsea Cable Between Europe And The U.S.</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+        <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+       </div>
+       </div>
+
+       <div  class="row technology Ran-tech">
+        <div class="col s12 m3">
+          <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1556448851-9359658faa54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="400px" height="300px" alt="Youtube"> 
+          <span class="badge teal white-text">Technology</span>
+         </div>
+         <div class="col s12 m6">
+          <h5>BMW To Sell All-Electric Versions Of Its 5 Series Sedan And X1 SUV</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+          <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+         </div>
+         </div>
+
+         <div  class="row technology Ran-tech">
+          <div class="col s12 m3">
+            <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="400px" height="300px" alt="Youtube"> 
+            <span class="badge teal white-text">Technology</span>
+           </div>
+           <div class="col s12 m6">
+            <h5>Google Chrome Beta V85 Brings 64-bit Support For Android, URL Hiding And More</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+            <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+           </div>
+           </div>
+
+         
+</section>  <!---Ending Of Tech Section-->
+
+<section id="news-Sec"> <!---News Section-->
+  <div  class="row Ran-News">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1564049489314-60d154ff107d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=761&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge brown darken-2 white-text">News</span>
+     </div>
+     <div class="col s12 m6">
+      <h5> Will PUBG Be Banned in India? Gamers are Making Memes to Deal With Worst Nightmare </h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+
+   <div  class="row Ran-News">
+    <div class="col s12 m3">
+      <img  class="responsive-img pimg"  src="https://images.unsplash.com/photo-1592438938165-5670d69731b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"  width="400px" height="300px" alt="Youtube"> 
+      <span class="badge brown darken-2 white-text">News</span>
+     </div>
+     <div class="col s12 m6">
+      <h5>Intel Fires Its Indian-Origin Chief Engineer Murthy Renduchintala For Production Failures</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel possimus quo laborum, perferendis eveniet quae fugiat sit deserunt pariatur.</p>
+      <a href="#!" class="waves-effect waves-light btn" onclick="popup()"> Read More</a>
+     </div>
+   </div>
+</section>     <!---Ending Of News Section-->
+
+     <div class="row">
+       <div class="col s12 center">
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active pink darken-4"><a href="#!">1</a></li>
+          <li class="waves-effect"><a onclick="M.toast({html: 'Currently Unavailable'})" href="#!">2</a></li>
+          <li class="waves-effect"><a onclick="M.toast({html: 'Currently Unavailable'})"  href="#!">3</a></li>
+          <li class="waves-effect"><a  onclick="M.toast({html: 'Currently Unavailable'})" href="#!">4</a></li>
+          <li class="waves-effect"><a onclick="M.toast({html: 'Currently Unavailable'})"  href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul> 
+       </div>
+     </div>
+
+    </section> 
+  <div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large  pulse tooltipped" data-position="left" data-tooltip="Quick Access">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a style="background-image: linear-gradient(to right, #6a11cb 0%, #75daf3 100%);" class="btn-floating  tooltipped" data-position="left" data-tooltip="Blog Topics" href="#topics"><i class="material-icons">dvr</i></a></li>
+        <li><a style="background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);" class="btn-floating  tooltipped" data-position="left" data-tooltip="Sign Up & Log In " href="SignUp.html"><i class="material-icons">camera_front</i></a></li>
+        <li><a style="background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);" class="btn-floating  tooltipped" data-position="left" data-tooltip="About" href="About.html"><i class="material-icons">person</i></a></li>
+        <li><a style="background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);" class="btn-floating  tooltipped" data-position="left" data-tooltip="Write A Post" onclick="popup()"><i class="material-icons">near_me</i></a></li>
+      </ul>
+    </div>
+  </div>
+    <footer id="FOOTER">
+      <div class="container-fluid ">
+        <div class="row" >
+          <div class="col s12 m12  footer-head"   data-aos="flip-down"
+          data-aos-offset="100"
+          data-aos-delay="50"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out">
+            <h3 class="center">BLOGHERE</h3>
+          
+            <p class="text-light">BLOG-HERE is a fictitious blog/Website developed and designed by ParthaDas-Dev (Partha Das) , In other words its a personal project to improve and showcase my skills as a WEB DEVELOPER.
+               
+            </p>
+          </div>
+        <div class="row footer-main">
+      
+          <div class="col s12 m6 l3">
+            <h5 class="white-text pl-2">QUICK LINKS <span class="Arrow"> <i class="fa fa-angle-double-down" aria-hidden="true"></i></span></h5>
+            <ul class="Qlinks ">
+              <li><a class="white-text" href="index.html">Home</a></li>
+              <li><a class="white-text" href="About.html">About</a></li>
+              <li><a class="white-text" href="Contact.html">Contact</a></li>
+              <li><a class="white-text" href="#" onclick="popup()">Privacy Policy</a></li>
+              <li><a class="white-text" href="#" onclick="popup()">Terms & Conditions</a></li>
+              <li><a class="white-text" href="#" onclick="popup()">Write A Post</a></li>
+              </ul>
+          </div>
+          <div class="col s12 m6 l5 footer-post">
+            <h6 class="blue-grey darken-4 white-text fpost-head">RECENT POSTS</h6>
+            <div class="f-underline"></div>
+            <div  class="row">
+              <div class="col s12 m3">
+                <img  class="responsive-img"  src="https://images.unsplash.com/photo-1542385939-cac37e190818?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"  width="150px" height="50px" alt="Youtube"> 
+
+               </div>
+               <div  class="col s12 m6">
+                <h6><a class="white-text" href="#">10 Things To See And Do In DETROIT </a></h6>
+                <a href="#!" class="waves-effect waves-light btn cyan accent-4" onclick="popup()"> Read More</a>
+               </div>
+             </div>
+             <div  class="row">
+              <div class="col s12 m3">
+                <img  class="responsive-img"  src="Blog-images/rpost8.jpg"  width="150px" height="50px" alt="Youtube"> 
+                
+               </div>
+               <div  class="col s12 m6">
+                <h6><a class="white-text" href="#">10 Best CORONAVIRUS Apps To Keep You Informed AND Cure </a></h6>
+               <a href="#!" class="waves-effect waves-light btn indigo lighten-1" onclick="popup()"> Read More</a>
+               </div>
+             </div>
+             <div  class="row">
+              <div class="col s12 m3">
+                <img  class="responsive-img"  src="https://images.unsplash.com/photo-1556448851-9359658faa54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"  width="150px" height="50px" alt="Youtube"> 
+                
+               </div>
+               <div  class="col s12 m6">
+                <h6><a class="white-text" href="#">BMW To Sell All-Electric Versions Of Its 5 Series Sedan And X1 SUV </a></h6>
+               <a href="#!" class="waves-effect waves-light btn  green accent-4" onclick="popup()"> Read More</a>
+               </div>
+             </div>
+          </div>
+     
+          
+  
+      
+            <div class="col s12 m8 l4">
+              <h5 class="center white-text" >Follow Us By Email</h4>
+              <p class="grey-text lighten-3 center" >Get Daily Updates By Subscribing Our <span class=" cyan-text lighten-4">NEWSLETTER</span></h6>
+           <div class="row">
+             
+           
+             <div class="card">
+              <form class="col s12 " onsubmit=" return emailval()" action="#!">
+                <div class="row">
+                  <div class=" col s8" id="SUBSCRIBE">
+                    <input type="text" id="email" autocomplete="off" placeholder="ENTER YOUR EMAIL">                  
+                  
+                    </div>
+                       <div class=" col s4">
+                        <button type="submit" class="btn subs ">SUBSCRIBE</button>
+
+                       </div>
+                  </form>
+           </div>
+          </div>
+         <div class="row f-post">
+           <h6 class="white-text">POPULAR POSTS</h6>
+           <div class="col s12">
+            <div  class="row">
+              <div class="col s12 m12">
+                <img  class="responsive-img"  src="Blog-images/post3.jpg"  width="150px" height="50px" alt="Youtube"> 
+
+               </div>
+               <div  class="col s12 m12">
+                <h6><a class="white-text" href="#">Best Places To Visit In ICELAND (2020) </a></h6>
+                <a href="#!" class="waves-effect waves-light btn  orange "> Read More</a>
+               </div>
+             </div>
+             <div  class="row">
+              <div class="col s12 m12">
+                <img  class="responsive-img"  src="Blog-images/p-post3.jpg"  width="150px" height="50px" alt="Youtube"> 
+
+               </div>
+               <div  class="col s12 m12">
+                <h6><a class="white-text" href="#">How To Stop Running Away From Difficulty Problem In Life</a></h6>
+                <a href="#!" class="waves-effect waves-light btn  grey darken-1 "> Read More</a>
+               </div>
+             </div>
+           </div>
+         </div>
+
+          </div>
+            
+            
+        </div>
+        </div>
+        
+    
+    </footer>
+  
+  
+  
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
+      

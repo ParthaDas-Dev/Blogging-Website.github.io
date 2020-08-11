@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN/ SIGN UP</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/Signup.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="teal">
+        <div class="nav-wrapper container">
+          <a href="blog.html" class="brand-logo center-align">BLOG-HERE</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li class="grey darken-3">
+              <a class="white-text" href="SignUp.html">LOG IN & SIGN UP</a>
+            </li>
+
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="mobile.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--Moblie Navigation-->
+      <ul class="sidenav teal" id="mobile-demo">
+        <li><a class="white-text" href="index.html">HOME</a></li>
+        <li><a class="white-text" href="SignUp.html">LOG IN & SIGN UP</a></li>
+        <li><a href="blog.html" class="white-text">BLOG</a></li>
+        <li><a class="white-text" href="collapsible.html">ABOUT</a></li>
+        <li><a class="white-text" href="mobile.html">CONTACT </a></li>
+      </ul>
+    </header>
+    <h1>LOG IN OR SIGN UP NOW</h1>
+    <div class="container-fluid">
+      <div class="Header-row">
+        <div class="row">
+          <div class="col s12 m8">
+            <h4 class="Heading">LOG IN/SIGN UP</h4>
+          </div>
+          <div class="col s6 m2">
+            <h6>
+              <a href="#" class="btn Sign-btn" onclick="Signup()">SIGN UP</a>
+            </h6>
+          </div>
+          <div class="col s6 m2">
+            <h6>
+              <a href="#" class="btn Log-btn" onclick="Login()">LOG IN</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="row sign-up-row">
+        <div class="col s12 m6 sign-main">
+          <div class="sign-des">
+            <h3>WELCOME</h3>
+            <h6>
+              Get Personalized Updates And Post By <br />
+              <span> SIGNING UP (Free)</span>
+            </h6>
+          </div>
+        </div>
+        <div class="col s12 m6 Sign-form">
+          <h4 class="S-heading">SIGN UP</h4>
+          <form
+            action="blog.html"
+            class="sign-up"
+            onsubmit="return signupval()"
+          >
+            <h6>Username:</h6>
+            <input type="text" id="uname" name="firstname" autocomplete="off" />
+            <span id="uerror"></span>
+            <h6>Email:</h6>
+            <input type="text" id="email" name="Email" autocomplete="off" />
+            <span id="mail-error"></span>
+            <h6>Password:</h6>
+            <input type="password" id="pass" name="firstname" />
+            <span id="pass-error"></span>
+            <h6>Confirm Password:</h6>
+            <input type="password" id="cpass" name="firstname" />
+            <span id="cpass-error"></span>
+            <br />
+            <br />
+            <input type="submit" class="btn purple" value="SIGN UP" />
+          </form>
+        </div>
+      </div>
+
+      <div class="row log-in-row">
+        <div class="col s12 m6 Sign-form">
+          <h4 class="L-heading">LOG IN</h4>
+          <form
+            action="blog.html"
+            class="sign-up"
+            onsubmit="return loginDone()"
+          >
+            <h6>Username:</h6>
+            <input
+              type="text"
+              id="l-uname"
+              name="username"
+              autocomplete="off"
+            />
+            <h6>Password:</h6>
+            <input type="password" id="l-pass" name="lpass" />
+
+            <br />
+            <br />
+            <input type="submit" class="btn orange darken-4" value="LOG IN" />
+          </form>
+        </div>
+
+        <div class="col s12 m6 log-main">
+          <div class="log-des">
+            <h3>WELCOME BACK</h3>
+            <h6>
+              Thank You For Being With Us For This long. <br />Old Friend!
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="js/Signup.js"></script>
+  </body>
+</html>

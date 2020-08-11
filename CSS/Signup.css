@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1595935736128-db1f0a261263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+.nav-wrapper {
+  font-weight: 600;
+}
+#mobile-demo {
+  background-image: linear-gradient(45deg, #004d40, #006064, #009688, #4db6ac);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  color: rgba(192, 183, 183, 0.1);
+  z-index: 1;
+}
+.Heading {
+  font-weight: 500;
+  color: #fff;
+  background-image: linear-gradient(to top, #30cfd0 0%, #2a0c4e 100%);
+  width: 300px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.Log-btn {
+  margin-left: -6rem;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-weight: 600;
+}
+.Log-btn:hover {
+  background-image: linear-gradient(to right, #9f67db 0%, #749ee7 100%);
+  transition: 0.3s ease-in-out;
+}
+.Sign-btn {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+}
+.Header-row {
+  background-color: #fff;
+}
+.sign-up-row {
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  transition: all 0.4s ease-in-out;
+}
+.log-in-row {
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+.sign-main,
+.log-main {
+  height: 90vh;
+  position: relative;
+  background-color: rgba(22, 89, 116, 0.8);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.sign-des,
+.log-des {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  animation: Sign-DES 1s ease-in-out;
+  animation-delay: 0.9s;
+}
+
+@keyframes Sign-DES {
+  0% {
+    left: -20%;
+  }
+  90% {
+    left: 15%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.sign-des,
+.log-des h3 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+}
+.sign-des,
+.log-des h6 {
+  color: #fff;
+}
+.sign-des h6 span {
+  font-weight: 800;
+}
+.Sign-form {
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.938);
+  z-index: 10;
+  position: relative;
+}
+.sign-up {
+  margin-left: 4rem;
+}
+.sign-up h6 {
+  font-weight: 500;
+}
+.S-heading {
+  padding: 3px 5px;
+  text-align: center;
+  background-image: linear-gradient(to right, #4facfe 50%, #00f2fe 100%);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
+  font-weight: bolder;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.L-heading {
+  padding: 3px 5px;
+  text-align: center;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#uname,
+#email,
+#pass,
+#cpass,
+#l-uname,
+#l-pass {
+  width: 65%;
+  border-bottom: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.sign-up input[type="text"] {
+  padding-left: 20px;
+}
+.sign-up input[type="password"] {
+  padding-left: 20px;
+}
+
+.sign-up input[type="text"]:focus {
+  background: rgba(66, 65, 65, 0.1);
+}
+.sign-up input[type="password"]:focus {
+  background: rgba(133, 218, 233, 0.2);
+}
+
+#uname::placeholder {
+  color: #000;
+}
+#email::placeholder {
+  color: #000;
+}
+#pass::placeholder {
+  color: #000;
+}
+#cpass::placeholder {
+  color: #000;
+}
+#uerror,
+#mail-error,
+#pass-error,
+#cpass-error {
+  color: rgb(221, 109, 109);
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+#l-uname::placeholder {
+  color: #000;
+}
+#l-pass::placeholder {
+  color: #000;
+}
+
+@media only screen and (max-width: 1150px) {
+  .Log-btn {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Log-btn {
+    margin-left: 0rem;
+  }
+
+  .sign-main,
+  .log-main {
+    height: 90vh;
+    position: relative;
+    background-color: rgba(22, 89, 116, 0.8);
+    clip-path: circle(55% at 50% 50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Heading {
+    font-size: 20px;
+    width: 220px;
+  }
+  .Log-btn {
+    margin-left: 0rem;
+  }
+  .Sign-btn {
+    margin-left: -2rem;
+  }
+  #uname,
+  #email,
+  #pass,
+  #cpass,
+  #l-uname,
+  #l-pass {
+    width: 85%;
+  }
+
+  .sign-des,
+  .log-des {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    animation: none;
+  }
+  .log-des h3 {
+    font-size: 30px;
+  }
+  .sign-main,
+  .log-main {
+    height: 90vh;
+    position: relative;
+    background-color: rgba(22, 89, 116, 0.8);
+    clip-path: circle(55% at 50% 50%);
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .Heading {
+    font-weight: 500;
+    width: 300px;
+  }
+  h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .brand-logo {
+    font-size: 20px !important;
+  }
+
+  .Log-btn {
+    margin-left: 0rem;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .Sign-btn {
+    margin-left: 0rem;
+    font-size: 12px;
+    width: 90px;
+  }
+  .sign-des,
+  .log-des {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    animation: none;
+  }
+  .sign-main,
+  .log-main {
+    height: 90vh;
+    position: relative;
+    background-color: rgba(22, 89, 116, 0.8);
+    clip-path: circle(55% at 50% 50%);
+  }
+  .sign-des h3 {
+    text-align: center;
+    font-weight: 800;
+  }
+  #uname,
+  #email,
+  #pass,
+  #cpass,
+  #l-uname,
+  #l-pass {
+    width: 90%;
+    margin-left: -2rem;
+  }
+
+  .log-des h3 {
+    font-size: 30px;
+  }
+  .log-in-row form {
+    padding-top: 3rem;
+  }
+}
